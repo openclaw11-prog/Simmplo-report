@@ -25,3 +25,9 @@ venv/
 # Editor
 .vscode/
 .idea/
+
+# Secrets (plaintext - never commit)
+secrets/*.json
+secrets/*.txt
+secrets/*.key
+!secrets/*.gpg
