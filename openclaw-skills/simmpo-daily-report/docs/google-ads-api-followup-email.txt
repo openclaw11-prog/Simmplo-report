@@ -1,0 +1,27 @@
+ Subject: Follow-up on Case #25327540079 — DEVELOPER_TOKEN_INVALID after Basic Access approval (7 days)
+
+Hi Google Ads API Support,
+
+I'm following up on Case #25327540079 regarding a persistent `DEVELOPER_TOKEN_INVALID` error.
+
+Our Developer Token was approved for Basic Access on March 18, 2026, but API calls still return `DEVELOPER_TOKEN_INVALID` as of today, March 25 — 7 days after approval.
+
+Account details:
+- MCC Account: 534-306-7958 (Simmpo-MCC)
+- MCC Owner: amber.chen@simmpo.com
+- Developer Token: _cRipdml1qUiOj6bl2dj3g
+- GCP Project: openclaw202603-490808
+- API Version: v20
+- OAuth scope: https://www.googleapis.com/auth/adwords (access token refresh confirmed valid)
+
+Request IDs for investigation:
+- j1fX-h0krnGrr4WYx1jEWQ  ← tested today, March 25
+- zmit7rX-igy49Pr0rln85A
+- kTdb0153IUU--9WyGfXMiQ
+
+We have verified that the OAuth token itself is valid and refreshes successfully. The error is specifically DEVELOPER_TOKEN_INVALID on every request to googleads.googleapis.com/v20/customers:listAccessibleCustomers.
+
+Could you please confirm whether there is a propagation delay on your side, or if any additional step is required to activate the approved Basic Access token?
+
+Thank you,
+Simmpo Team

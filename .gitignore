@@ -1,0 +1,27 @@
+# Logs (contain business-sensitive data)
+logs/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Tokens / secrets
+*tokens*.json
+*.key
+*.secret
+
+# Editor
+.vscode/
+.idea/
